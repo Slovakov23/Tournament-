@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турнир</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <h2 id="title">Кто лучше?</h2>
+
+  <div id="battle">
+    <div class="card" onclick="pick(0)">
+      <img id="img1">
+      <p id="name1"></p>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="card" onclick="pick(1)">
+      <img id="img2">
+      <p id="name2"></p>
+    </div>
+  </div>
+
+  <button id="restart" onclick="start()" style="display:none;">
+    Пройти ещё раз
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
